@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 Our Unique Love Story 🌹</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .notebook {
+            width: 800px; /* Increased size */
+            height: 500px; /* Increased size */
+            perspective: 1000px;
+            position: relative;
+            overflow: hidden; /* Hide overflow for the notebook */
+        }
+
+        .page {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: #fff;
+            border: 2px solid #ff6b81;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transform-origin: left;
+            transition: transform 0.6s;
+            display: flex;
+        }
+
+        .cover {
+            background: linear-gradient(to right, #ff6b81, #ffb3ba); /* Colorful gradient */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px; /* Larger font size for the title */
+            text-align: center;
+            border: none;
+            padding: 20px; /* Added padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .left-page, .right-page {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto; /* Scrollable */
+        }
+
+        .left-page {
+            background-color: #ffeef8; /* Light pink background */
+        }
+
+        .right-page {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            gap: 10px;
+        }
+
+        .images img {
+            width: 90%; /* Adjust width */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .entry p {
+            font-size: 20px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #d35400;
+        }
+
+        button {
+            background-color: #ff6b81;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 10px; /* Space between buttons */
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .left-page ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0;
+            margin: 10px 0; /* Space around the list */
+        }
+
+        .left-page ul li {
+            font-size: 20px; /* Adjust size as needed */
+            margin: 5px 0; /* Space between list items */
+            color: #d35400; /* Match color theme */
+        }
+
+        .left-page h2 {
+            font-size: 26px; /* Title size */
+            margin-bottom: 10px; /* Space below the title */
+        }
+    </style>
+</head>
+<body>
+    <div class="notebook">
+        <div class="page cover" id="cover">
+            💖 Our Unique Love Story 💖
+        </div>
+
+        <div class="page hidden" id="page1">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>💌 "Though we’ve never met, my heart knows you well."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>🌙 Favorite memory: Our late-night talks under the stars.</li>
+                        <li>😂 What I love: Your sense of humor that always makes me smile!</li>
+                        <li>💞 Looking forward to: Our first meeting and all the adventures to come.</li>
+                    </ul>
+                    <p>🌼 "You are my sunshine on cloudy days." ☀️</p>
+                    <p>💖 "Together, we can conquer the world!" 🌍</p>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="muffin1.jpg" alt="Love Image 1">
+                    <img src="me2.jpg" alt="Love Image 2">
+                    <img src="muffin3.jpg" alt="Love Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page2">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>🌟 "In every fight, I find more reasons to love you."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>🌈 Our silly arguments that always end in laughter.</li>
+                        <li>❤️ Your support through thick and thin.</li>
+                        <li>🥳 Celebrating our little victories together.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="fanger.jpg" alt="Love Image 4">
+                    <img src="ffear.jpg" alt="Love Image 5">
+                    <img src="pitai.jpg" alt="Love Image 6">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page3">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>💖 "Every message from you is a treasure."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>📱 Your messages that brighten my day.</li>
+                        <li>🌺 The way you always know what to say.</li>
+                        <li>💌 Every love letter you’ve sent my way.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="happy1.jpg" alt="Love Image 7">
+                    <img src="me1.jpg" alt="Love Image 8">
+                    <img src="muffin4.jpg" alt="Love Image 9">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page4">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>💘 "Your words are my favorite melody."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>🎶 Every song that reminds me of you.</li>
+                        <li>💓 The way your voice calms my heart.</li>
+                        <li>🎤 imagining your voice while reading your messages.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="sweet voive1.jpg" alt="Love Image 10">
+                    <img src="sweet voice2.jpg" alt="Love Image 11">
+                    <img src="myv.jpg" alt="Love Image 12">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page5">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>🌍 "Distance means so little when you mean so much."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>✈️ Planning trips together.</li>
+                        <li>📅 Counting down the days until we meet.</li>
+                        <li>💖 Feeling your love across the miles.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love13.jpg" alt="Love Image 13">
+                    <img src="love14.jpg" alt="Love Image 14">
+                    <img src="love15.jpg" alt="Love Image 15">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page6">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>❤️ "In our virtual world, our love is so real."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>💻 Our late-night video calls.</li>
+                        <li>💬 The way we can talk for hours.</li>
+                        <li>📸 Sharing our lives through photos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love16.jpg" alt="Love Image 16">
+                    <img src="love17.jpg" alt="Love Image 17">
+                    <img src="love18.jpg" alt="Love Image 18">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page7">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>🌻 "Love isn’t always easy, but it’s always worth it—let’s never let go."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>💪 Supporting each other through tough times.</li>
+                        <li>🤝 Always being there for one another.</li>
+                        <li>🌈 Finding joy in the little things together.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love19.jpg" alt="Love Image 19">
+                    <img src="love20.jpg" alt="Love Image 20">
+                    <img src="love21.jpg" alt="Love Image 21">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page8">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>🌹 "In your laughter, I find my happiness."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>🎉 Your contagious laughter.</li>
+                        <li>💞 The way you brighten my days.</li>
+                        <li>✨ Creating beautiful memories together.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love22.jpg" alt="Love Image 22">
+                    <img src="love23.jpg" alt="Love Image 23">
+                    <img src="love24.jpg" alt="Love Image 24">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page9">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>💖 "We fight, we cry, but oh, how we love."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>💔 Learning and growing together.</li>
+                        <li>❤️ The strength of our bond.</li>
+                        <li>🌟 Celebrating our love every day.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love25.jpg" alt="Love Image 25">
+                    <img src="love26.jpg" alt="Love Image 26">
+                    <img src="love27.jpg" alt="Love Image 27">
+                </div>
+            </div>
+        </div>
+
+        <div class="page hidden" id="page10">
+            <div class="left-page">
+                <div class="entry">
+                    <h2 style="font-family: 'Brush Script MT', cursive; color: #d35400;">💖 Our Memories 💖</h2>
+                    <p>✨ "Every word from you feels like a warm embrace."</p>
+                    <p>✨ Here are some things I cherish about you:</p>
+                    <ul>
+                        <li>💌 Your kind words that lift me up.</li>
+                        <li>🫂 The warmth of your love.</li>
+                        <li>🌸 Our shared dreams and hopes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-page">
+                <div class="images">
+                    <img src="love28.jpg" alt="Love Image 28">
+                    <img src="love29.jpg" alt="Love Image 29">
+                    <img src="love30.jpg" alt="Love Image 30">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <button class="prev" onclick="prevPage()">❮</button>
+        <button class="next" onclick="nextPage()">❯</button>
+    </div>
+
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="fairytail.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        let currentPage = 0;
+        const pages = document.querySelectorAll('.page');
+
+        function flipPage(pageNumber) {
+            if (pageNumber < pages.length) {
+                pages[currentPage].style.transform = 'rotateY(-180deg)';
+                pages[currentPage].classList.add('hidden');
+                currentPage = pageNumber;
+                pages[currentPage].classList.remove('hidden');
+                pages[currentPage].style.transform = 'rotateY(0deg)';
+            } else {
+                // Reset to cover if beyond last page
+                pages[currentPage].style.transform = 'rotateY(-180deg)';
+                currentPage = 0;
+                pages[currentPage].classList.remove('hidden');
+                pages[currentPage].style.transform = 'rotateY(0deg)';
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < pages.length - 1) {
+                flipPage(currentPage + 1);
+            } else {
+                flipPage(0); // Go back to cover if at last page
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 0) {
+                flipPage(currentPage - 1);
+            } else {
+                flipPage(pages.length - 1); // Go to last page if at first page
+            }
+        }
+
+        // Initialize the first page
+        document.getElementById('cover').style.transform = 'rotateY(0deg)';
+        pages[currentPage].classList.remove('hidden');
+    </script>
+</body>
+</html>
